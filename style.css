@@ -1,0 +1,36 @@
+/* Custom styles to enhance Bootstrap */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+#hero {
+    min-height: 80vh;
+    /* Make hero section take up most of the screen */
+    background: radial-gradient(circle at center, #1b1b1b 0%, #000000 100%);
+}
+
+.text-primary {
+    color: #0d6efd !important;
+    /* Bootstrap primary color, can be customized here */
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Smooth scrolling is handled by CSS for simple anchor links */
+html {
+    scroll-behavior: smooth;
+}
