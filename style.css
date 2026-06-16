@@ -30,7 +30,107 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+
 /* Smooth scrolling is handled by CSS for simple anchor links */
 html {
     scroll-behavior: smooth;
+}
+
+/* Skills Progress Bars V2 */
+.skill-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e0e0e0, #ffffff);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+    border: 1px solid #ddd;
+}
+
+.progress-pill {
+    height: 40px;
+    border-radius: 50px;
+    background-color: #333;
+    /* Default, overridden by colors */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.progress-pill:hover {
+    transform: scale(1.05);
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 50px;
+    background-color: #fff;
+    width: 0%;
+    /* Javascript or Inline style will set this */
+    transition: width 1.5s ease-in-out;
+}
+
+/* Custom Colors for Track */
+.bg-teal {
+    background-color: #20c997 !important;
+}
+
+.bg-cyan {
+    background-color: #0dcaf0 !important;
+}
+
+.bg-purple {
+    background-color: #6f42c1 !important;
+}
+
+.bg-pink {
+    background-color: #d63384 !important;
+}
+
+.bg-orange {
+    background-color: #fd7e14 !important;
+}
+
+.bg-blue {
+    background-color: #0d6efd !important;
+}
+
+.bg-yellow {
+    background-color: #ffc107 !important;
+}
+
+/* Scroll Animation Classes */
+.hidden-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease-out;
+}
+
+.hidden-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Social Button Zoom Effect */
+.social-btn {
+    transition: transform 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
 }
