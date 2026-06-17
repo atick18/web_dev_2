@@ -11,6 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
         threshold: 0.1 // Trigger when 10% of the element is visible
     });
 
-    const hiddenElements = document.querySelectorAll('.hidden-left, .hidden-right');
+    const hiddenElements = document.querySelectorAll('.hidden-left, .hidden-right, .hidden-bottom');
     hiddenElements.forEach((el) => observer.observe(el));
 });
