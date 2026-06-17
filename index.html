@@ -219,7 +219,7 @@
             <h2 class="fw-bold text-center mb-5">My Projects</h2>
             <div class="row g-4">
                 <!-- Project 1 -->
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-3">
                     <div class="card h-100 bg-dark border-secondary text-light">
                         <img src="assets/iot-project.png" class="card-img-top" alt="Agriculture IoT Project">
                         <div class="card-body">
@@ -227,7 +227,7 @@
                             <p class="card-text text-secondary">A smart agriculture solution using IoT sensors to
                                 monitor soil moisture and crop health.</p>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                            <button type="button" class="btn btn-outline-primary btn-sm w-100" data-bs-toggle="modal"
                                 data-bs-target="#iotProjectModal">
                                 View Details
                             </button>
@@ -235,14 +235,14 @@
                     </div>
                 </div>
                 <!-- Project 2 -->
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-3">
                     <div class="card h-100 bg-dark border-secondary text-light">
                         <img src="assets/fruit-game.png" class="card-img-top" alt="Fruit Cutting Game">
                         <div class="card-body">
                             <h5 class="card-title">Fruit Cutting Game</h5>
                             <p class="card-text text-secondary">A dynamic arcade-style game developed using JavaFX.
                                 Slice fruits, avoid bombs, and achieve high scores!</p>
-                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                            <button type="button" class="btn btn-outline-primary btn-sm w-100" data-bs-toggle="modal"
                                 data-bs-target="#fruitGameModal">
                                 View Details
                             </button>
@@ -250,17 +250,36 @@
                     </div>
                 </div>
                 <!-- Project 3 -->
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-3">
                     <div class="card h-100 bg-dark border-secondary text-light">
                         <img src="assets/shopping-cart.png" class="card-img-top" alt="Shopping Cart using C++">
                         <div class="card-body">
                             <h5 class="card-title">Shopping Cart using C++</h5>
                             <p class="card-text text-secondary">A console-based shopping cart application developed in
                                 C++ demonstrating OOP principles, data structure management, and file handling.</p>
-                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                            <button type="button" class="btn btn-outline-primary btn-sm w-100" data-bs-toggle="modal"
                                 data-bs-target="#shoppingCartModal">
                                 View Details
                             </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 bg-dark border-secondary text-light">
+                        <img src="assets/cipher-desk.png" class="card-img-top" alt="Cipher Desk">
+                        <div class="card-body">
+                            <h5 class="card-title">Cipher Desk</h5>
+                            <p class="card-text text-secondary">An interactive, retro-themed cryptography web app designed to encode and decode signals/messages using classic cipher methods.</p>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-outline-primary btn-sm flex-grow-1" data-bs-toggle="modal"
+                                    data-bs-target="#cipherDeskModal">
+                                    Details
+                                </button>
+                                <a href="https://atick18.github.io/ethical_project/" target="_blank" class="btn btn-primary btn-sm flex-grow-1">
+                                    Live Link
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -351,6 +370,35 @@
                     </ul>
                 </div>
                 <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cipher Desk Modal -->
+    <div class="modal fade" id="cipherDeskModal" tabindex="-1" aria-labelledby="cipherDeskModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="cipherDeskModalLabel">Cipher Desk Project Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/cipher-desk.png" class="img-fluid rounded mb-3" alt="Cipher Desk">
+                    <p>An interactive, retro-styled cryptography signal desk that allows users to encode and decode messages using classic cipher techniques (like Caesar cipher) in real time.</p>
+                    <h6 class="fw-bold text-primary">Features & Tech Stack:</h6>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-transparent text-light border-secondary">Clean, modular HTML5 structure</li>
+                        <li class="list-group-item bg-transparent text-light border-secondary">Vanilla CSS with typewriter fonts & glow effects</li>
+                        <li class="list-group-item bg-transparent text-light border-secondary">Interactive JavaScript encoding/decoding engine</li>
+                        <li class="list-group-item bg-transparent text-light border-secondary">Real-time input translation with customizable keys</li>
+                    </ul>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <a href="https://atick18.github.io/ethical_project/" target="_blank" class="btn btn-primary">Visit Live Site</a>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
